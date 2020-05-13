@@ -1,8 +1,8 @@
 {
-  "name": "jest-scaffold",
+  "name": "jest-unit-test-demo",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "https://github.com/dujuanxian/F-jest-scaffold.git",
+  "repository": "https://github.com/GTB-training/F-jest-unit-test-demo.git",
   "author": "杜娟 <jdu.xian@gmail.com>",
   "license": "MIT",
   "scripts": {
