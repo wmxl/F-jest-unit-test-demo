@@ -1,4 +1,4 @@
-import { verifyPassword } from "../register";
+import { verifyPassword } from "../verify";
 
 describe("verifyPassword", () => {
   test("should return false when password length < 6", () => {

@@ -37,7 +37,9 @@
     }
   },
   "lint-staged": {
-    "*.js": "eslint \"src/\" --cache --fix --format table",
     "*.{js,css,md}": "prettier --write"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
   }
 }
