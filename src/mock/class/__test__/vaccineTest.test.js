@@ -4,9 +4,17 @@ import Covid19Vaccine from "../covid19Vaccine";
 
 const mockAcceptInjection = jest.fn();
 
-jest.mock("../recipient", () => {
-  // mock class实现
-});
+const moduleFactory = () => {
+  const theMockOfClass = function () {
+    //What in the Object?
+    const returnValue = {};
+    return returnValue;
+  };
+
+  return theMockOfClass;
+};
+
+jest.mock("../recipient", moduleFactory);
 
 beforeEach(() => {
   Recipient.mockClear();
