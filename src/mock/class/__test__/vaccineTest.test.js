@@ -5,11 +5,12 @@ import Covid19Vaccine from "../covid19Vaccine";
 const mockAcceptInjection = jest.fn();
 
 const moduleFactory = () => {
-  const theMockOfClass = function () {
-    //What in the Object?
-    const returnValue = {};
+  const theMockOfClass = jest.fn().mockImplementation(() => {
+    const returnValue = {
+      acceptInjection: mockAcceptInjection,
+    };
     return returnValue;
-  };
+  });
 
   return theMockOfClass;
 };
