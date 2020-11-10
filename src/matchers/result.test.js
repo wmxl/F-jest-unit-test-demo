@@ -29,7 +29,11 @@ test("是否抛出X错误", () => {
   const errorFunc = () => {
     throw new Error("something wrong");
   };
+  //注意，这里是errorFunc，而不是errorFunc()
   expect(errorFunc).toThrow(Error);
+  expect(errorFunc).toThrow(new Error("something wrong"));
+  expect(errorFunc).toThrow("wrong");
+  expect(errorFunc).toThrow(/something wrong/);
 });
 
 test("是否大于/小于/... X数字", () => {
