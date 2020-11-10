@@ -29,6 +29,6 @@ describe("inject", () => {
     // Act
     // 调用inject
     // Assert
-    // 判断模拟recipient对象有没有接收注射，及模拟acceptInjection被调用
+    // 判断模拟recipient对象有没有接收注射，及模拟acceptInjection被调用 - expect.any(type not value)
   });
 });
